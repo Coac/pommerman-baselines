@@ -10,7 +10,7 @@ cdef class Bomber(object):
     cdef byte agent_id
     cdef constants.Item teammate
     cdef constants.Item[3] enemies
-    cdef Position position
+    cdef public Position position
     cdef Position start_position
     cdef Position desired_position
     cdef Position delayed_position

@@ -16,7 +16,7 @@ cdef class Pomme(object):
     cdef unsigned short _max_steps
     cdef byte _is_partially_observable
     cdef byte training_agent
-    cdef list _agents, _bombs, _flames
+    cdef public list _agents, _bombs, _flames
     cdef forward_model.ForwardModel model
     cdef object action_space, observation_space
     cdef byte[constants.BOARD_SIZE][constants.BOARD_SIZE] _board
